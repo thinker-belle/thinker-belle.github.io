@@ -1,0 +1,71 @@
+<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+<Container>
+  <Link to="/" className="navbar-brand">
+    Assentrix HR LRQMS
+  </Link>
+
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="me-auto">
+      <Link to="/" className="nav nav-link">
+        <FontAwesomeIcon icon={fasicons.faHome} className="ms-3 me-3" />
+        Home
+      </Link>
+      <Link to="/leaveapplication" className="nav nav-link">
+        <FontAwesomeIcon
+          icon={fasicons.faEnvelopeOpen}
+          className="ms-3 me-3"
+        />
+        File a Leave
+      </Link>
+      <Link to="/leavecredits" className="nav nav-link">
+        <FontAwesomeIcon
+          icon={fasicons.faFolderOpen}
+          className="ms-3 me-3"
+        />
+        View Leave Credits
+      </Link>
+      <Link to="/generalssettings" className="nav nav-link">
+        <FontAwesomeIcon icon={fasicons.faCogs} className="ms-3 me-3" />
+        General Settings
+      </Link>
+      <Link to="/leaveposting" className="nav nav-link">
+        <FontAwesomeIcon
+          icon={fasicons.faTasks}
+          className="ms-3 me-3"
+        />
+        Post Leave Requests
+      </Link>
+    </Nav>
+  </Navbar.Collapse>
+  <Nav expand={true}>
+    <NavDropdown title="Admin" id="collasible-nav-dropdown" align="end">
+      <NavDropdown.Item>
+        <Link to="/profile" className="dropdown-item">
+          <FontAwesomeIcon icon={fasicons.faUser} className="me-3" />
+          Profile
+        </Link>
+      </NavDropdown.Item>
+      <NavDropdown.Item>
+        <Link to="/dashboard" className="dropdown-item">
+          <FontAwesomeIcon
+            icon={fasicons.faTachometerAlt}
+            className="me-3"
+          />
+          Dashboard
+        </Link>
+      </NavDropdown.Item>
+
+      <NavDropdown.Item>
+        <Link to="/logout" className="dropdown-item">
+          <FontAwesomeIcon
+            icon={fasicons.faSignOutAlt}
+            className="me-3"
+          />
+          Logout
+        </Link>
+      </NavDropdown.Item>
+    </NavDropdown>
+  </Nav>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+</Container>
+</Navbar>

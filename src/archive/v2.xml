@@ -1,0 +1,45 @@
+ <Navbar  bg="dark" variant="dark" expand={false}>
+        <Container fluid>
+          <Navbar.Toggle aria-controls="offcanvasNavbar" />
+          <Nav className="me-auto ms-2">
+            <Navbar.Brand href="#home">Assentrix HR LRQMS</Navbar.Brand>
+          </Nav>
+          
+          <Navbar>
+            <Nav>
+              <NavDropdown
+                title="Admin"
+                id="collasible-nav-dropdown"
+                align="end"
+              >
+                <NavDropdown.Item>
+                  <Link to="/profile" className="dropdown-item">
+                    <FontAwesomeIcon icon={fasicons.faUser} className="me-3" />
+                    Profile
+                  </Link>
+                </NavDropdown.Item>
+                <NavDropdown.Item>
+                  <Link to="/dashboard" className="dropdown-item">
+                    <FontAwesomeIcon
+                      icon={fasicons.faTachometerAlt}
+                      className="me-3"
+                    />
+                    Dashboard
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item>
+                  <Link to="/logout" className="dropdown-item">
+                    <FontAwesomeIcon
+                      icon={fasicons.faSignOutAlt}
+                      className="me-3"
+                    />
+                    Logout
+                  </Link>
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar>
+        </Container>
+        {/* <PageSidebar /> */}
+      </Navbar>
